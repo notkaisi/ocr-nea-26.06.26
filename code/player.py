@@ -70,7 +70,10 @@ class Player(pygame.sprite.Sprite):
                             if self.direction.y < 0: self.hitbox_rect.top = sprite.rect.bottom
                             if self.direction.y > 0: self.hitbox_rect.bottom = sprite.rect.top
 
-    def update(self, dt):
-        self.input()
-        self.move(dt)
+    def update(self, dt, can_move=True):
+        if can_move:
+            self.input()
+            self.move(dt)
+        else:
+            self.direction = pygame.Vector2()
         self.animate(dt)

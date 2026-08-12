@@ -4,7 +4,8 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>f012ef7a-2a6f-4095-b9df-ab1e72beb4b8</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>code\main.py</StartupFile>
+    <StartupFile>
+    </StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -21,16 +22,24 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="code\battle.py" />
+    <Compile Include="code\battle\attack.py" />
+    <Compile Include="code\battle\battle.py" />
+    <Compile Include="code\battle\enemy.py" />
+    <Compile Include="code\battle\support.py" />
+    <Compile Include="code\battle\timer.py" />
+    <Compile Include="code\battle\ui.py" />
+    <Compile Include="code\dialogue.py" />
     <Compile Include="code\groups.py" />
     <Compile Include="code\main.py" />
     <Compile Include="code\player.py" />
     <Compile Include="code\settings.py" />
     <Compile Include="code\sprites.py" />
+    <Compile Include="code\__init__.py" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include=".github\" />
     <Folder Include="code\" />
+    <Folder Include="code\battle\" />
     <Folder Include="data\" />
     <Folder Include="data\graphics new\" />
     <Folder Include="data\graphics new\objects\" />
